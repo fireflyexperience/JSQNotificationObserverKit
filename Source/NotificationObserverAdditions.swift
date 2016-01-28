@@ -1,6 +1,6 @@
 import Foundation
 
-typealias SignalObserver = NotificationObserver<Any?, AnyObject>
+public typealias SignalObserver = NotificationObserver<Any?, AnyObject>
 
 public struct JSQNotify {
     public static func Signal(name: Swift.String) {

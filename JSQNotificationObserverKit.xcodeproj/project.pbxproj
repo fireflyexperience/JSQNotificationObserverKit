@@ -17,6 +17,10 @@
 		8855BF311C3C9F1300D2876E /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855BF251C3C9F1300D2876E /* NotificationObserver.swift */; };
 		8855BF361C3C9F9700D2876E /* NotificationObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855BF341C3C9F9700D2876E /* NotificationObserverTests.swift */; };
 		886C35241B365733004B64EF /* JSQNotificationObserverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887D75E41ABFBD7A00AAE6E7 /* JSQNotificationObserverKit.framework */; };
+		B8E78B861C5A51F3002EB6E3 /* NotificationObserverAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E78B851C5A51F3002EB6E3 /* NotificationObserverAdditions.swift */; };
+		B8E78B871C5A51F3002EB6E3 /* NotificationObserverAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E78B851C5A51F3002EB6E3 /* NotificationObserverAdditions.swift */; };
+		B8E78B881C5A51F3002EB6E3 /* NotificationObserverAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E78B851C5A51F3002EB6E3 /* NotificationObserverAdditions.swift */; };
+		B8E78B891C5A51F3002EB6E3 /* NotificationObserverAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E78B851C5A51F3002EB6E3 /* NotificationObserverAdditions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,7 @@
 		8862F58F1C37F06100B44CA3 /* JSQNotificationObserverKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQNotificationObserverKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886C351F1B365733004B64EF /* JSQNotificationObserverKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQNotificationObserverKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		887D75E41ABFBD7A00AAE6E7 /* JSQNotificationObserverKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQNotificationObserverKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E78B851C5A51F3002EB6E3 /* NotificationObserverAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserverAdditions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				8855BF251C3C9F1300D2876E /* NotificationObserver.swift */,
+				B8E78B851C5A51F3002EB6E3 /* NotificationObserverAdditions.swift */,
 				8855BF241C3C9F1300D2876E /* JSQNotificationObserverKit.h */,
 				8855BF231C3C9F1300D2876E /* Info.plist */,
 			);
@@ -341,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E78B881C5A51F3002EB6E3 /* NotificationObserverAdditions.swift in Sources */,
 				8855BF301C3C9F1300D2876E /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E78B871C5A51F3002EB6E3 /* NotificationObserverAdditions.swift in Sources */,
 				8855BF2F1C3C9F1300D2876E /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E78B891C5A51F3002EB6E3 /* NotificationObserverAdditions.swift in Sources */,
 				8855BF311C3C9F1300D2876E /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E78B861C5A51F3002EB6E3 /* NotificationObserverAdditions.swift in Sources */,
 				8855BF2E1C3C9F1300D2876E /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

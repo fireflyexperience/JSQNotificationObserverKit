@@ -12,7 +12,7 @@ public struct JSQNotify {
 
 extension NotificationObserver
 {
-    public static func Signal(
+    public class func Signal(
         name: Swift.String,
         queue: NSOperationQueue? = nil,
         center: NSNotificationCenter = .defaultCenter(),
@@ -22,7 +22,7 @@ extension NotificationObserver
         return NotificationObserver<Any?, AnyObject>(notification: notification, queue: queue, center: center, handler: handler)
     }
     
-    public static func String(
+    public class func String(
         name: Swift.String,
         queue: NSOperationQueue? = nil,
         center: NSNotificationCenter = .defaultCenter(),

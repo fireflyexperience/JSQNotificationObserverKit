@@ -1,12 +1,13 @@
 import Foundation
 
 public struct JSQNotify {
-    public static func Signal(name: Swift.String) -> Notification<Any?, AnyObject> {
-        return Notification<Any?, AnyObject>(name: name)
+    public static func Signal(name: Swift.String) {
+        Notification<Any?, AnyObject>(name: name).post(nil)
     }
     
-    public static func String(name: Swift.String) -> Notification<Swift.String, AnyObject> {
-        return Notification<Swift.String, AnyObject>(name: name)
+    public static func String(name: Swift.String, message: Swift.String) {
+        let notification = Notification<Swift.String, AnyObject>(name: name)
+        notification.post(message)
     }
 }
 
@@ -18,7 +19,7 @@ extension NotificationObserver
         center: NSNotificationCenter = .defaultCenter(),
         handler: NotificationHandler) -> NotificationObserver<Any?, AnyObject>
     {
-        let notification = JSQNotify.Signal(name)
+        let notification = Notification<Any?, AnyObject>(name: name)
         return NotificationObserver<Any?, AnyObject>(notification: notification, queue: queue, center: center, handler: handler)
     }
     
@@ -28,7 +29,7 @@ extension NotificationObserver
         center: NSNotificationCenter = .defaultCenter(),
         handler: NotificationHandler) -> NotificationObserver<Swift.String, AnyObject>
     {
-        let notification = JSQNotify.String(name)
+        let notification = Notification<Swift.String, AnyObject>(name: name)
         return NotificationObserver<Swift.String, AnyObject>(notification: notification, queue: queue, center: center, handler: handler)
     }
 }

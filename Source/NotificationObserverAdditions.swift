@@ -21,4 +21,14 @@ extension NotificationObserver
         let notification = JSQNotify.Signal(name)
         return NotificationObserver<Any?, AnyObject>(notification: notification, queue: queue, center: center, handler: handler)
     }
+    
+    public static func String(
+        name: Swift.String,
+        queue: NSOperationQueue? = nil,
+        center: NSNotificationCenter = .defaultCenter(),
+        handler: NotificationHandler) -> NotificationObserver<Swift.String, AnyObject>
+    {
+        let notification = JSQNotify.String(name)
+        return NotificationObserver<Swift.String, AnyObject>(notification: notification, queue: queue, center: center, handler: handler)
+    }
 }
